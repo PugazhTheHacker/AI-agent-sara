@@ -20,7 +20,7 @@ Telegram Bot receives your message using Telegram Bot API.
 The Python program forwards that message text to Gemini AI API.
 Gemini processes the text using its large language model (LLM).
 
-🚀 Hosting on Render (Free 24/7)
+#🚀 Hosting on Render (Free 24/7)
 Create a GitHub repo:
 ```
 AI-Agent-Sara/
@@ -28,11 +28,11 @@ AI-Agent-Sara/
 ├── requirements.txt
 └── Procfile
 ```
-Install python pakages
+#Install python pakages
 ```
 pip3 install requirements.txt
 ```
-How to run this file 
+#How to run this file 
 ```
 python3 telegrambot.py
 ```
@@ -42,7 +42,7 @@ python3 telegrambot.py
 BOT_TOKEN = your_telegram_bot_token
 GEMINI_API_KEY = your_gemini_api_key
 ```
-💬 Example Questions to Test
+#💬 Example Questions to Test
 Try chatting with Sara on Telegram:
 ```
 /start
@@ -53,7 +53,22 @@ Write a short Tamil poem.
 Who created Python?
 Generate a funny quote about hackers.
 ```
-✨ Credits
+
+#🧩 Future Ideas
+You can extend AI-Agent-Sara easily:
+🌦️ Add live weather info
+🔍 Integrate Linux tools like nmap, ping, or whois
+🧮 Add calculator or translator mode
+📊 Connect it to databases for chat memory
+
+#🛡️ Security Notes
+Always store API keys in environment variables, not in the code.
+Never share your tokens publicly.
+Use .gitignore to hide local config files before pushing to GitHub.
+
+
+
+#✨ Credits
 
 Project: AI-Agent-Sara
 Author: Pugazhenthi J
@@ -62,9 +77,3 @@ Built with:
 💬 Telegram Bot API
 🐍 Python 3
 ☁️ Render (for hosting)
-
-
-
-The AI’s response is sent back to your Telegram chat.
-
-🧩 Data Flow:
