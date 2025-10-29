@@ -10,8 +10,8 @@ import requests
 from google import genai
 
 # === CONFIG ===
-BOT_TOKEN = "8324411455:AAGEiyqTkzTbQ4oUn3Pu4xMighC5MPjV9TA"
-GEMINI_API_KEY = "AIzaSyAmBzpuzZ_YsB_xviDvOS1sol83Vrq_3ws"
+BOT_TOKEN = "YOUR_TOKEN"
+GEMINI_API_KEY = "YOUR_TOKEN"
 if not BOT_TOKEN or not GEMINI_API_KEY:
     print("❌ Missing BOT_TOKEN or GEMINI_API_KEY environment variables.")
     print("👉 Example:")
