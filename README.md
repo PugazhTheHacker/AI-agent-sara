@@ -20,6 +20,23 @@ Telegram Bot receives your message using Telegram Bot API.
 The Python program forwards that message text to Gemini AI API.
 Gemini processes the text using its large language model (LLM).
 
+🚀 Hosting on Render (Free 24/7)
+Create a GitHub repo:
+```
+AI-Agent-Sara/
+├── ai_agent_sara.py
+├── requirements.txt
+└── Procfile
+```
+Install python pakages
+```
+pip3 install requirements.txt
+```
+How to run this file 
+```
+python3 telegrambot.py
+```
+
 #API_TOKEN How to use 
 ```
 BOT_TOKEN = your_telegram_bot_token
