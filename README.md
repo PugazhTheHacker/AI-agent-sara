@@ -176,7 +176,7 @@ with system tools, file processing & threat-intel features.
 
 👨‍💻 Developer
 
-Author: Pugazh
+Author: Pugazhenthi j
 Cyber Security Researcher & Ethical Hacker
 Telegram Security + AI Automation Enthusiast
 
