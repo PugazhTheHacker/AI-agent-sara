@@ -1,79 +1,192 @@
-# AI-agent-sara
+ 
+# sara cybersecurity bot.
 
 
-#🤖 AI-Agent-Sara — Gemini Powered Telegram Bot
+README.md
 
-AI-Agent-Sara is an intelligent Telegram chatbot built with Python.
-It connects Google Gemini AI API with the Telegram Bot API, letting you chat with a powerful AI directly inside Telegram — like having your own personal AI assistant on your phone.
+# 🤖 AI-Agent-Sara — Telegram Automation AI Agent (Gemini + Email Sender)
 
-#🌟 Features
+AI-Agent-Sara is an intelligent conversational Telegram bot powered by **Google Gemini AI**.  
+The bot acts as a personal AI assistant that can reply smartly to chats and also perform automated tasks such as **sending emails directly from Telegram**.
 
-✅ Chat with Google’s Gemini AI directly in Telegram
-✅ Fully written in Python using only requests
-✅ Works on Linux, Windows, or cloud hosting (Render, Replit, VPS)
-✅ Secure with environment variables (no hard-coded keys)
-✅ Easy to extend for tools like nmap, weather, or news
+Sara is built in **Python** and integrates three core systems:
+1️⃣ Telegram Bot API  
+2️⃣ Google Gemini AI API  
+3️⃣ Gmail SMTP Email Automation  
 
-#🧠 How It Works
+---
 
-Telegram Bot receives your message using Telegram Bot API.
-The Python program forwards that message text to Gemini AI API.
-Gemini processes the text using its large language model (LLM).
+## 🚀 Features
 
-#🚀 Hosting on Render (Free 24/7)
-Create a GitHub repo:
-```
-AI-Agent-Sara/
-├── ai_agent_sara.py
-├── requirements.txt
-└── Procfile
-```
-#Install python pakages
-```
-pip3 install requirements.txt
-```
-#How to run this file 
-```
-python3 telegrambot.py
-```
+| Feature | Status |
+|--------|--------|
+| Smart AI chat via Gemini | ✅ |
+| Dynamic email sending | ✅ |
+| User inputs sender email | ✅ |
+| User inputs receiver email | ✅ |
+| Multi-step conversation automation | ✅ |
+| Secure credentials using environment variables | ✅ |
 
-#API_TOKEN How to use 
-```
-BOT_TOKEN = your_telegram_bot_token
-GEMINI_API_KEY = your_gemini_api_key
-```
-#💬 Example Questions to Test
-Try chatting with Sara on Telegram:
-```
-/start
-Hello Sara!
-What is AI?
-Explain cloud computing.
-Write a short Tamil poem.
-Who created Python?
-Generate a funny quote about hackers.
-```
+---
 
-#🧩 Future Ideas
-You can extend AI-Agent-Sara easily:
-🌦️ Add live weather info
-🔍 Integrate Linux tools like nmap, ping, or whois
-🧮 Add calculator or translator mode
-📊 Connect it to databases for chat memory
+## 🧠 How It Works
 
-#🛡️ Security Notes
-Always store API keys in environment variables, not in the code.
-Never share your tokens publicly.
-Use .gitignore to hide local config files before pushing to GitHub.
+User Message → Telegram Bot → Python Script → Gemini AI → Bot Reply
+
+/email command → Ask sender email Ask receiver email Ask subject Ask message | ↓ SMTP → Gmail → Email Delivered
+
+Sara becomes not just a chatbot, but a **real task-performing AI agent**.
+
+---
+
+## 🔧 Tech Stack
+
+| Component | Technology |
+|----------|------------|
+| Programming Language | Python 3 |
+| AI Model | Google Gemini Pro |
+| Messaging Platform | Telegram Bot API |
+| Email Automation | Gmail SMTP |
+| Hosting (optional) | Render / Replit / VPS |
+
+---
+
+## 🏗 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/PugazhTheHacker/AI-agent-sara.git
+cd AI-agent-sara
+
+2️⃣ Install dependency
+
+pip install requests
+
+3️⃣ Create required environment variables
+
+export BOT_TOKEN="your_telegram_bot_token"
+export GEMINI_API_KEY="your_gemini_api_key"
+export EMAIL_USER="yourgmail@gmail.com"
+export EMAIL_PASS="your_gmail_app_password"
+
+🔹 EMAIL_PASS must be a Gmail App Password, not regular Gmail password.
+
+
+---
+
+▶️ Run the Bot
+
+python3 ai_agent_sara.py
+
+You’ll see:
+
+🤖 AI-Agent-Sara is now online...
+
+Now open Telegram and chat with your bot.
+
+
+---
+
+💬 Commands
+
+Command	Description
+
+/start	Introduces Sara and shows features
+/email	Starts the email automation process
+Text Message	Gemini AI Intelligent reply
 
 
 
-#✨ Credits
+---
 
-Project: AI-Agent-Sara
-Author: Pugazhenthi J
-Built with:
-🧠 Google Gemini API
-💬 Telegram Bot API
-🐍 Python 3
-☁️ Render (for hosting)
+✨ Email Automation Flow
+
+/email
+📧 Enter your email (Sender)
+📨 Enter receiver email
+📌 Enter subject
+✍️ Enter message body
+📩 Email sent successfully! 🚀
+
+Works completely inside Telegram — no UI needed.
+
+
+---
+
+📝 Example Email Body Sent via Sara
+
+Hello,
+
+This email was sent automatically via the AI-Agent-Sara Telegram bot.
+
+Regards,
+Sara – Gemini AI Assistant 🤖
+
+
+---
+
+🌐 Hosting Suggestions
+
+Platform	Notes
+
+Render	Free, 24/7 uptime
+Replit	Easiest to start
+AWS / DigitalOcean VPS	Full power
+Local PC	For development
+
+
+
+---
+
+🔐 Security Notes
+
+Never push API keys or passwords to GitHub
+
+Always use .env or environment variables
+
+Never share Gemini API keys or Gmail App Password publicly
+
+
+
+---
+
+🛣 Future Upgrade Ideas (Planned)
+
+Feature	Priority
+
+Email attachments (PDF/Images)	⭐⭐⭐⭐
+Scheduled email (time delay)	⭐⭐⭐
+Memory — save frequently used sender email	⭐⭐⭐
+Database logging for email history	⭐⭐
+Voice message → AI transcription	⭐⭐
+
+
+
+---
+
+🏅 Project Status
+
+AI-Agent-Sara v1.0 — Completed & Stable
+
+Next goal → convert Sara into full AI Automation Suite
+with system tools, file processing & threat-intel features.
+
+
+---
+
+👨‍💻 Developer
+
+Author: Pugazh
+Cyber Security Researcher & Ethical Hacker
+Telegram Security + AI Automation Enthusiast
+
+
+---
+
+⭐ Support the Project
+
+If you like this project, star the repo ⭐
+and share ideas for the next update.
+
+gitHub : https://github.com/PugazhTheHacker/AI-agent-sara
+
