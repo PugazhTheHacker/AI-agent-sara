@@ -1,8 +1,6 @@
  
-# sara cybersecurity bot.
 
 
-README.md
 
 # 🤖 AI-Agent-Sara — Telegram Automation AI Agent (Gemini + Email Sender)
 
